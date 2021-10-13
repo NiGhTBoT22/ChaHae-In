@@ -4,15 +4,15 @@ import re
 
 from telegram import Message, Chat, Update, User, ChatPermissions
 
-from AsunaRobot import TIGERS, WOLVES, dispatcher
-from AsunaRobot.modules.helper_funcs.chat_status import (
+from AriseRobot import TIGERS, WOLVES, dispatcher
+from AriseRobot.modules.helper_funcs.chat_status import (
     bot_admin,
     is_user_admin,
     user_admin,
     user_admin_no_reply,
 )
-from AsunaRobot.modules.log_channel import loggable
-from AsunaRobot.modules.sql import antiflood_sql as sql
+from AriseRobot.modules.log_channel import loggable
+from AriseRobot.modules.sql import antiflood_sql as sql
 from telegram.error import BadRequest
 from telegram.ext import (
     CallbackContext,
@@ -23,10 +23,10 @@ from telegram.ext import (
     run_async,
 )
 from telegram.utils.helpers import mention_html, escape_markdown
-from AsunaRobot.modules.helper_funcs.string_handling import extract_time
-from AsunaRobot.modules.connection import connected
-from AsunaRobot.modules.helper_funcs.alternate import send_message
-from AsunaRobot.modules.sql.approve_sql import is_approved
+from AriseRobot.modules.helper_funcs.string_handling import extract_time
+from AriseRobot.modules.connection import connected
+from AriseRobot.modules.helper_funcs.alternate import send_message
+from AriseRobot.modules.sql.approve_sql import is_approved
 
 FLOOD_GROUP = 3
 
