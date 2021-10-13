@@ -274,8 +274,8 @@ async def apk(e):
     except Exception as err:
         await e.reply("Exception Occured:- " + str(err))
 
-
-        @register(pattern=r"^/grs(?: |$)(\d*)")
+ 
+@register(pattern=r"^/grs(?: |$)(\d*)")
 async def okgoogle(img):
     """ For .reverse command, Google search images and stickers. """
     if os.path.isfile("okgoogle.png"):
@@ -348,7 +348,7 @@ async def okgoogle(img):
 
 
 
-__mod_name__ = "◎Search"
+__mod_name__ = "Google+"
 
 __help__ = """
  ❍ /google <text>*:* Perform a google search
