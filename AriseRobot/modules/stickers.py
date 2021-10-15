@@ -466,4 +466,4 @@ dispatcher.add_handler(STICKERS_HANDLER)
 dispatcher.add_handler(STICKERID_HANDLER)
 dispatcher.add_handler(GETSTICKER_HANDLER)
 dispatcher.add_handler(KANG_HANDLER)
-KANG_HANDLER = DisableAbleCommandHandler(["kang","steal"
+
