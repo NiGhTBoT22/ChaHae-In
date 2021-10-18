@@ -65,7 +65,7 @@ RUN apt update && apt upgrade -y && \
 RUN pip3 install --upgrade pip setuptools
 
 # Copy Python Requirements to /root/AriseRobot 
-RUN git clone -b main https://github.com/levelingdragon/ChaHae-In /root/AriseRobot
+RUN git clone -b main https://github.com/Solo-Dragon/ChaHae-In /root/AriseRobot
 WORKDIR /root/AriseRobot
 
 #Copy config file to /root/AriseRobot/AriseRobot
