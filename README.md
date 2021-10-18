@@ -69,8 +69,8 @@ Start with ```python -m AriseRobot```
 <details>
       <summary>Railway Deploy </summary>
       <br>
-       <p align="center">
 # [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template?template=https%3A%2F%2Fgithub.com%2FSolo-Dragon%2FChaHae-In&envs=INFOPIC%2CEVENT_LOGS%2CENV%2CAPI_ID%2CAPI_HASH%2CBOT_ID%2CMONGO_DB_URI%2COPENWEATHERMAP_ID%2CVIRUS_API_KEY%2CSTRICT_GBAN%2CCASH_API_KEY%2CTIME_API_KEY%2CSUPPORT_CHAT%2CSPAMWATCH_SUPPORT_CHAT%2CSPAMWATCH_API%2CBOT_USERNAME%2CJOIN_LOGGER%2CDRAGONS%2CDEV_USERS%2CDEMONS%2CWOLVES%2CTIGERS&optionalEnvs=INFOPIC%2CEVENT_LOGS&INFOPICDesc=Don%27t+change&EVENT_LOGSDesc=Set+channel+id+for+gban+logs&API_IDDesc=From+my.telegram.org&API_HASHDesc=My.telegram.org&MONGO_DB_URIDesc=Get+from+Mongodb.com&ENVDefault=ANYTHING&STRICT_GBANDefault=True)
       
 </p>
+</details>
       
