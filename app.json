@@ -190,6 +190,7 @@
          "description": "Get from elephantsql.com",
          "required": true,
          "value": ""
-      },
+      }
+         
       }
   }
