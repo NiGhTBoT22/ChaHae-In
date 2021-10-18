@@ -1,4 +1,4 @@
-# ChaHae-In
+# Cha Hae-In
 ![Cha](https://telegra.ph//file/257059bc7f419a24a021d.jpg)
 A modular telegram Python bot running on python3 with an sqlalchemy, Redis, mongodb database.
 
