@@ -84,14 +84,15 @@ START_VID = "https://i.imgur.com/B2FzRvj.mp4"
 PM_START_TEXT = """
 *Cʜᴀ Hᴀᴇ-Iɴ (차해인) ɪs ᴀ Kᴏʀᴇᴀɴ S-Rᴀɴᴋ Hᴜɴᴛᴇʀ 
 ᴀɴᴅ ᴛʜᴇ Vɪᴄᴇ-Gᴜɪʟᴅ Mᴀsᴛᴇʀ ᴏғ ᴛʜᴇ Hᴜɴᴛᴇʀs Gᴜɪʟᴅ.*
-⥈❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖⥈
+⥈❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖⥈
 ❝𝐀 𝐌𝐚𝐧𝐡𝐰𝐚 𝐁𝐚𝐬𝐞𝐝 𝐂𝐮𝐭𝐞 𝐚𝐧𝐝 𝐀𝐝𝐯𝐚𝐧𝐜𝐞𝐝 𝐆𝐫𝐨𝐮𝐩 𝐌𝐚𝐧𝐚𝐠𝐞𝐦𝐞𝐧𝐭 𝐁𝐨𝐭 𝙛𝙧𝙤𝙢
-➲ SФLФ LΞVΞLIИG 
+➲ *SФLФ LΞVΞLIИG*
 𝐛𝐲 𝐖𝐞𝐞𝐛𝐬...❞
-⤚
-𖼜﹍𖼜﹍ 𝚄𝚜𝚎 𝚝𝚑𝚎 𝚋𝚞𝚝𝚝𝚘𝚗𝚜 𝚋𝚎𝚕𝚘𝚠 𝚝𝚘 𝚔𝚗𝚘𝚠 𝚖𝚘𝚛𝚎 𝚊𝚋𝚘𝚞𝚝 𝚖𝚎 𝙾𝚛 𝚈𝚘𝚞 𝚌𝚊𝚗 𝚞𝚜𝚎 /help 𝚝𝚘 𝚐𝚘 𝚝𝚑𝚛𝚘𝚞𝚐𝚑 𝚃𝚑𝚎 𝙷𝚞𝚗𝚝𝚎𝚛𝚜 𝙶𝚞𝚒𝚍𝚎 
+⥈❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖⥈
+⤚━━━━━━━━━━━━━━━━━━━━━━━━⤙
+𝚄𝚜𝚎 𝚝𝚑𝚎 𝚋𝚞𝚝𝚝𝚘𝚗𝚜 𝚋𝚎𝚕𝚘𝚠 𝚝𝚘 𝚔𝚗𝚘𝚠 𝚖𝚘𝚛𝚎 𝚊𝚋𝚘𝚞𝚝 𝚖𝚎 *𝙾𝚛*\n 𝚈𝚘𝚞 𝚌𝚊𝚗 𝚞𝚜𝚎 /help 𝚝𝚘 𝚐𝚘 𝚝𝚑𝚛𝚘𝚞𝚐𝚑 𝚃𝚑𝚎 𝙷𝚞𝚗𝚝𝚎𝚛𝚜 𝙶𝚞𝚒𝚍𝚎
 Powered by #AɪɴCʀᴀᴅ
-
+⤚━━━━━━━━━━━━━━━━━━━━━━━━⤙
 [ㅤ](https://telegra.ph/file/8712abbb7ac7fec3391ca.png)
 """
 
@@ -124,8 +125,8 @@ CHA_VID = "https://telegra.ph/file/1ecaa74c1556fa3ad0dde.mp4"
 KEK= "https://i.imgur.com/3l2Cptl.mp4"
 
 HELP_STRINGS = """
-`Hey Sweetheart... I am` Cʜᴀ Hᴀᴇ-Iɴ again[ㅤ](https://images.alphacoders.com/105/1054066.jpg) 
-⤚━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━⤙
+`Hey Sweetheart... I am` Cʜᴀ Hᴀᴇ-Iɴ[ㅤ](https://images.alphacoders.com/105/1054066.jpg) 
+⤚━━━━━━━━━━━━━━━━━━━━━━━━━⤙
 *Main* commands available:
  ❖ /start: Cʜᴇᴄᴋ Mᴇ... Iꜰ I Aᴍ Aʟɪᴠᴇ Oʀ Nᴏᴛ
  ❖ /help: Usᴇ Tʜɪs... Iꜰ Yᴏᴜ Nᴇᴇᴅ Mᴏʀᴇ Iɴꜰᴏ Aʙᴏᴜᴛ Mᴇ!
