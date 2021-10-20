@@ -79,56 +79,64 @@ def get_readable_time(seconds: int) -> str:
     ping_time += ":".join(time_list)
 
     return ping_time
-
+SUP_VID = "https://telegra.ph/file/f26b221897fe1e3403063.mp4"
 START_VID = "https://i.imgur.com/B2FzRvj.mp4"
 PM_START_TEXT = """
-Hєуα!! Tнιѕ ιѕ *Mᴀᴋɪᴍᴀ Sᴀɴsᴜᴋɪ*(マキマ). 
-The Public Safety Devil Hunter...
-[‎](https://i.imgur.com/mK0AlBi.jpeg)
-*Tнιѕ ιѕ αɴ order. Sαy yoυ'll мαĸe α coɴтrαcт...*
-`𝐀𝐧𝐝 𝐈𝐧 𝐢𝐧 𝐫𝐞𝐭𝐮𝐫𝐧 𝐈 𝐰𝐢𝐥𝐥 𝐦𝐚𝐧𝐚𝐠𝐞 𝐲𝐨𝐮𝐫 𝐠𝐫𝐨𝐮𝐩 𝐰𝐢𝐭𝐡 𝐞𝐚𝐬𝐞...` 
-𝐓𝐚𝐩 /help 𝐭𝐨 𝐤𝐧𝐨𝐰 𝐦𝐨𝐫𝐞 𝐚𝐛𝐨𝐮𝐭 𝐦𝐞...
+*Cʜᴀ Hᴀᴇ-Iɴ (차해인) ɪs ᴀ Kᴏʀᴇᴀɴ S-Rᴀɴᴋ Hᴜɴᴛᴇʀ 
+ᴀɴᴅ ᴛʜᴇ Vɪᴄᴇ-Gᴜɪʟᴅ Mᴀsᴛᴇʀ ᴏғ ᴛʜᴇ Hᴜɴᴛᴇʀs Gᴜɪʟᴅ.*
+⥈❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖⥈
+❝𝐀 𝐌𝐚𝐧𝐡𝐰𝐚 𝐁𝐚𝐬𝐞𝐝 𝐂𝐮𝐭𝐞 𝐚𝐧𝐝 𝐀𝐝𝐯𝐚𝐧𝐜𝐞𝐝 𝐆𝐫𝐨𝐮𝐩 𝐌𝐚𝐧𝐚𝐠𝐞𝐦𝐞𝐧𝐭 𝐁𝐨𝐭 𝙛𝙧𝙤𝙢
+➲ SФLФ LΞVΞLIИG 
+𝐛𝐲 𝐖𝐞𝐞𝐛𝐬...❞
+⤚
+𖼜﹍𖼜﹍ 𝚄𝚜𝚎 𝚝𝚑𝚎 𝚋𝚞𝚝𝚝𝚘𝚗𝚜 𝚋𝚎𝚕𝚘𝚠 𝚝𝚘 𝚔𝚗𝚘𝚠 𝚖𝚘𝚛𝚎 𝚊𝚋𝚘𝚞𝚝 𝚖𝚎 𝙾𝚛 𝚈𝚘𝚞 𝚌𝚊𝚗 𝚞𝚜𝚎 /help 𝚝𝚘 𝚐𝚘 𝚝𝚑𝚛𝚘𝚞𝚐𝚑 𝚃𝚑𝚎 𝙷𝚞𝚗𝚝𝚎𝚛𝚜 𝙶𝚞𝚒𝚍𝚎 
 Powered by #AɪɴCʀᴀᴅ
+
+[ㅤ](https://telegra.ph/file/8712abbb7ac7fec3391ca.png)
 """
 
 buttons = [
     [
         InlineKeyboardButton(
-            text="➕️ Aᴅᴅ Mᴀᴋɪᴍᴀ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ➕️", url="t.me/makimasuperbot?startgroup=true"),
+            text="Aᴅᴅ Cʜᴀ Hᴀᴇ-Iɴ ᴛᴏ Pʀᴏᴛᴇᴄᴛ Yᴏᴜʀ Gʀᴏᴜᴘ ➕️", url="t.me/chahaeinbot?startgroup=true"),
     ],
     [
-        InlineKeyboardButton(text="ᴀʙᴏᴜᴛ", callback_data="Arise_"),
+        InlineKeyboardButton(text="Mʏ ʀᴀɴᴋ", callback_data="Arise_"),
         InlineKeyboardButton(
-            text="ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}"
+            text="Tʜᴇ Sᴏʟᴏ Gᴜɪʟᴅ", url=f"https://t.me/{SUPPORT_CHAT}"
         ),
     ],
     [
-        InlineKeyboardButton(text="ʜᴇʟᴘ & ᴄᴏᴍᴍᴀɴᴅꜱ❔", callback_data="help_back"),
+        InlineKeyboardButton(text="Tʜᴇ Hᴜɴᴛᴇʀs Gᴜɪᴅᴇ", callback_data="help_back"),
     ],
     [
-        InlineKeyboardButton(text="✧ Anime Chat ✧", url="t.me/animefunchat"),
+        InlineKeyboardButton(text="✧ Aɴɪᴍᴇ Cʜᴀᴛ ✧", url="t.me/animefunchat"),
         InlineKeyboardButton(
-            text="❖ AɪɴCʀᴀᴅ ❖", url=f"https://t.me/aincradnetwork"
+            text="❖ AɪɴCʀᴀᴅ Nᴇᴛᴡᴏʀᴋ ❖", url=f"https://t.me/aincradnetwork"
         ),
     ]
 ]
 
 
-OP_STRINGS = """ The last year you’ve spent as a devil hunter is forever etched in your heart. 
-I know you were my dog, subconsciously. """
+OP_STRINGS = """ How I could ever tell him...I want you by my side until I draw my last breath? """
 
-
-
+CHA_VID = "https://telegra.ph/file/1ecaa74c1556fa3ad0dde.mp4"
+KEK= "https://i.imgur.com/3l2Cptl.mp4"
 
 HELP_STRINGS = """
-`Hey Sweetheart... I am` [Mᴀᴋɪᴍᴀ Sᴀɴsᴜᴋɪ](https://i.imgur.com/SCfeHAH.jpeg) 
-*My focus is different. My time is being invested on growth. I don’t expect people to understand what I’m up to. Eventually they’ll see.*
-`ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴꜱ ʙᴇʟᴏᴡ ᴛᴏ ɢᴇᴛ ᴅᴏᴄᴜᴍᴇɴᴛᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ꜱᴘᴇᴄɪꜰɪᴄ ᴍᴏᴅᴜʟᴇꜱ..`"""
+`Hey Sweetheart... I am` Cʜᴀ Hᴀᴇ-Iɴ again[ㅤ](https://images.alphacoders.com/105/1054066.jpg) 
+⤚━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━⤙
+*Main* commands available:
+ ❖ /start: Cʜᴇᴄᴋ Mᴇ... Iꜰ I Aᴍ Aʟɪᴠᴇ Oʀ Nᴏᴛ
+ ❖ /help: Usᴇ Tʜɪs... Iꜰ Yᴏᴜ Nᴇᴇᴅ Mᴏʀᴇ Iɴꜰᴏ Aʙᴏᴜᴛ Mᴇ!
+ ⤚━━━━━━━━━━━━━━━━━━━━━━━━⤙
+ *For Issues Report At* @TheSoloGuild\n `Powered by` #AɪɴCʀᴀᴅ
+ ⤚━━━━━━━━━━━━━━━━━━━━━━━━⤙"""
 
 
-Arise_IMG = "https://i.imgur.com/vQ4ryec.png"
+ARISE_IMG = "https://i.imgur.com/vQ4ryec.png"
 
-DONATE_STRING = """I am a Devil... There is mo need to donate... All I seek is pawns. Join Us into @AinCradNetwork."""
+DONATE_STRING = """I am a S-Rank Hunter... There is mo need to donate... All I seek is pawns. Join Us into @AinCradNetwork."""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -229,7 +237,7 @@ def start(update: Update, context: CallbackContext):
 
         else:
             update.effective_message.reply_text(
-                #Arise_IMG,
+                #ARISE_IMG,
                 PM_START_TEXT,
                 reply_markup=InlineKeyboardMarkup(buttons),
                 disable_web_page_preview=False,
@@ -237,11 +245,23 @@ def start(update: Update, context: CallbackContext):
                 timeout=60,
             )
     else:
-        update.effective_message.reply_text(
-            "I am MAKIMA マキマ!\nThe Control Devil alive<b> since:</b> <code>{}</code>".format(
-                uptime
+        update.effective_message.reply_video(
+            CHA_VID, caption=f"UwU Cʜᴀ Hᴀᴇ-Iɴ Summoned by {}(차해인)!\nProtecting Groups<b> since:</b> <code>{}</code>".format(
+                 escape_markdown(first_name),uptime
             ),
             parse_mode=ParseMode.HTML,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                  [
+                  InlineKeyboardButton(text="Tʜᴇ Sᴏʟᴏ Gᴜɪʟᴅ", url="https://t.me/Thesologuild")
+                  ],
+                  [
+                  InlineKeyboardButton(text="Aɴɪᴍᴇ Cʜᴀᴛ", url="t.me/animefunchat"),
+                  InlineKeyboardButton(text="AɪɴCʀᴀᴅ Nᴇᴛᴡᴏʀᴋ", url="t.me/aincradnetwork")
+                  ]
+                ]
+            ),
+        )
         )
 
 def error_handler(update, context):
@@ -416,7 +436,7 @@ def Arise_about_callback(update, context):
                 disable_web_page_preview=False,
         )
 
-
+'''
 @run_async
 def Source_about_callback(update, context):
     query = update.callback_query
@@ -441,7 +461,7 @@ def Source_about_callback(update, context):
                 parse_mode=ParseMode.MARKDOWN,
                 timeout=60,
                 disable_web_page_preview=False,
-        )
+        )'''
 
 @run_async
 def get_help(update: Update, context: CallbackContext):
@@ -718,7 +738,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.send_video(f"@{SUPPORT_CHAT}", START_VID, caption=f"A Corpse is talking")
+            dispatcher.bot.send_video(f"@{SUPPORT_CHAT}", SUP_VID, caption=f"UwU, I am here to protect you..")
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!"
@@ -736,7 +756,7 @@ def main():
     settings_callback_handler = CallbackQueryHandler(settings_button, pattern=r"stngs_")
 
     about_callback_handler = CallbackQueryHandler(Arise_about_callback, pattern=r"Arise_")
-    source_callback_handler = CallbackQueryHandler(Source_about_callback, pattern=r"source_")
+    #source_callback_handler = CallbackQueryHandler(Source_about_callback, pattern=r"source_")
 
     donate_handler = CommandHandler("donate", donate)
     migrate_handler = MessageHandler(Filters.status_update.migrate, migrate_chats)
@@ -745,7 +765,7 @@ def main():
     dispatcher.add_handler(start_handler)
     dispatcher.add_handler(help_handler)
     dispatcher.add_handler(about_callback_handler)
-    dispatcher.add_handler(source_callback_handler)
+    #dispatcher.add_handler(source_callback_handler)
     dispatcher.add_handler(settings_handler)
     dispatcher.add_handler(help_callback_handler)
     dispatcher.add_handler(settings_callback_handler)
@@ -764,7 +784,7 @@ def main():
             updater.bot.set_webhook(url=URL + TOKEN)
 
     else:
-        LOGGER.info("The Devil Awaits.")
+        LOGGER.info("The Shadow Monarch Awaits")
         updater.start_polling(timeout=15, read_latency=4, clean=True)
 
     if len(argv) not in (1, 3, 4):
