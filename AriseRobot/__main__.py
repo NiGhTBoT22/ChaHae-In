@@ -245,6 +245,7 @@ def start(update: Update, context: CallbackContext):
                 timeout=60,
             )
     else:
+        first_name = update.effective_user.first_name
         update.effective_message.reply_video(
             CHA_VID, caption= "UwU Cʜᴀ Hᴀᴇ-Iɴ Summoned by {}(차해인)!\nProtecting Groups<b> since:</b> <code>{}</code>".format(
                  escape_markdown(first_name), escape_markdown(uptime)
