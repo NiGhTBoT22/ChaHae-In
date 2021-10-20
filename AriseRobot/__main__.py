@@ -562,7 +562,7 @@ def send_settings(chat_id, user_id, user=False):
                 "in a group chat you're admin in to find its current settings!",
                 parse_mode=ParseMode.MARKDOWN,
             )
-
+#all done ig
 
 @run_async
 def settings_button(update: Update, context: CallbackContext):
