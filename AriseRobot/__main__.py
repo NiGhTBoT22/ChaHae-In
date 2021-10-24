@@ -158,7 +158,7 @@ KEK= "https://i.imgur.com/3l2Cptl.mp4"
 
 HELP_STRINGS = f"""
 
-`Hey there! My name is` `Hinata Shôyô`(https://telegra.ph/file/ac837bb1d07ca740c5c1f.jpg) 
+`Hey there! My name is` `Hinata Shôyô`{(https://telegra.ph/file/ac837bb1d07ca740c5c1f.jpg)} 
 
 I have Quite a Few Features, Go Ahead and Check out!"""
 
