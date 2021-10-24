@@ -97,25 +97,59 @@ Powered by #AɪɴCʀᴀᴅ
 """
 
 buttons = [
+
     [
+
         InlineKeyboardButton(
-            text="Aᴅᴅ Cʜᴀ Hᴀᴇ-Iɴ ᴛᴏ Pʀᴏᴛᴇᴄᴛ Yᴏᴜʀ Gʀᴏᴜᴘ ➕️", url="t.me/chahaeinbot?startgroup=true"),
-    ],
-    [
-        InlineKeyboardButton(text="Mʏ ʀᴀɴᴋ", callback_data="Arise_"),
-        InlineKeyboardButton(
-            text="Tʜᴇ Sᴏʟᴏ Gᴜɪʟᴅ", url=f"https://t.me/{SUPPORT_CHAT}"
+
+            text="🔰Summon ME🔰",url=f"t.me/{BOT_USERNAME}?startgroup=true"
+
         ),
+
     ],
+
     [
-        InlineKeyboardButton(text="Tʜᴇ Hᴜɴᴛᴇʀs Gᴜɪᴅᴇ", callback_data="help_back"),
-    ],
-    [
-        InlineKeyboardButton(text="✧ Aɴɪᴍᴇ Cʜᴀᴛ ✧", url="t.me/animefunchat"),
+
         InlineKeyboardButton(
-            text="❖ AɪɴCʀᴀᴅ Nᴇᴛᴡᴏʀᴋ ❖", url=f"https://t.me/aincradnetwork"
+
+          text="📮 Updates", url="https://t.me/CLIPPED_CROW"
+
+        ),InlineKeyboardButton(
+
+           text="🐱 Support", url=f"https://t.me/{SUPPORT_CHAT}"
+
+         ),
+
+    ],
+
+    [
+
+        InlineKeyboardButton(
+
+          text="WALLPAPER", url="https://t.me/ani_pix"
+
+        ),InlineKeyboardButton(
+
+           text="GROUP", url=f"https://t.me/shhhilence"
+
+         ),
+
+    ],
+
+         
+
+    
+
+  [
+
+        InlineKeyboardButton(
+
+          text="❕HELP❕", callback_data="help_back"
+
         ),
-    ]
+
+    ],
+
 ]
 
 
