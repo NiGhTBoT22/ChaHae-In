@@ -79,8 +79,8 @@ def get_readable_time(seconds: int) -> str:
     ping_time += ":".join(time_list)
 
     return ping_time
-SUP_VID = "https://telegra.ph/file/f26b221897fe1e3403063.mp4"
-START_VID = "https://i.imgur.com/B2FzRvj.mp4"
+SUP_VID = "https://telegra.ph/file/64cb84764c1f6dcc9a272.jpg"
+START_VID = "https://telegra.ph/file/c9f10581223f6c45d755e.jpg"
 PM_START_TEXT = """
 *Cʜᴀ Hᴀᴇ-Iɴ (차해인) ɪs ᴀ Kᴏʀᴇᴀɴ S-Rᴀɴᴋ Hᴜɴᴛᴇʀ 
 ᴀɴᴅ ᴛʜᴇ Vɪᴄᴇ-Gᴜɪʟᴅ Mᴀsᴛᴇʀ ᴏғ ᴛʜᴇ Hᴜɴᴛᴇʀs Gᴜɪʟᴅ.*
@@ -93,7 +93,7 @@ PM_START_TEXT = """
 𝚄𝚜𝚎 𝚝𝚑𝚎 𝚋𝚞𝚝𝚝𝚘𝚗𝚜 𝚋𝚎𝚕𝚘𝚠 𝚝𝚘 𝚔𝚗𝚘𝚠 𝚖𝚘𝚛𝚎 𝚊𝚋𝚘𝚞𝚝 𝚖𝚎 *𝙾𝚛*\n 𝚈𝚘𝚞 𝚌𝚊𝚗 𝚞𝚜𝚎 /help 𝚝𝚘 𝚐𝚘 𝚝𝚑𝚛𝚘𝚞𝚐𝚑 𝚃𝚑𝚎 𝙷𝚞𝚗𝚝𝚎𝚛𝚜 𝙶𝚞𝚒𝚍𝚎
 Powered by #AɪɴCʀᴀᴅ
 ⤚━━━━━━━━━━━━━━━━━━━━━━━━⤙
-[ㅤ](https://telegra.ph/file/8712abbb7ac7fec3391ca.png)
+[ㅤ](https://telegra.ph/file/7eaa21cf7b81549ba29ad.jpg)
 """
 
 buttons = [
