@@ -31,16 +31,12 @@ def insult(update: Update, _):
     reply_text(random.choice(fun_strings.INSULT_STRINGS))
 
 @run_async
-def fuck(update: Update, _):
-    msg = update.effective_message
-    reply_text = msg.reply_to_message.reply_text if msg.reply_to_message else msg.reply_text
-    reply_text(random.choice(fun_strings.HORNY_STRINGS))
+def fuck(update: Update, context: CallbackContext):
+    update.effective_message.reply_text(random.choice(fun_strings.HORNY_STRINGS))
 
 @run_async
-def sex(update: Update, _):
-    msg = update.effective_message
-    reply_text = msg.reply_to_message.reply_text if msg.reply_to_message else msg.reply_text
-    reply_text(random.choice(fun_strings.HORNY_STRINGS))
+def sex(update: Update, context: CallbackContext):
+    update.effective_message.reply_text(random.choice(fun_strings.HORNY_STRINGS))
 
 @run_async
 def dare(update: Update, context: CallbackContext):
@@ -320,8 +316,8 @@ RUNS_HANDLER = DisableAbleCommandHandler("runs", runs)
 TRUTH_HANDLER = DisableAbleCommandHandler("truth", truth)
 DARE_HANDLER = DisableAbleCommandHandler("dare", dare)
 INSULT_HANDLER = DisableAbleCommandHandler("insult", insult)
-INSULT_HANDLER = DisableAbleCommandHandler("fuck", fuck)
-INSULT_HANDLER = DisableAbleCommandHandler("sex", sex)
+SEX_HANDLER = DisableAbleCommandHandler("fuck", fuck)
+FUCK_HANDLER = DisableAbleCommandHandler("sex", sex)
 PAT_HANDLER = DisableAbleCommandHandler("pat", pat)
 ROLL_HANDLER = DisableAbleCommandHandler("roll", roll)
 TOSS_HANDLER = DisableAbleCommandHandler("toss", toss)
@@ -337,6 +333,8 @@ WEEBIFY_HANDLER = DisableAbleCommandHandler("weebify", weebify)
 dispatcher.add_handler(WEEBIFY_HANDLER)
 dispatcher.add_handler(INSULT_HANDLER)
 dispatcher.add_handler(TRUTH_HANDLER)
+dispatcher.add_handler(FUCK_HANDLER)
+dispatcher.add_handler(SEX_HANDLER)
 dispatcher.add_handler(DARE_HANDLER)
 dispatcher.add_handler(SHOUT_HANDLER)
 dispatcher.add_handler(SANITIZE_HANDLER)
@@ -389,4 +387,6 @@ __handlers__ = [
     INSULT_HANDLER,
     TRUTH_HANDLER, 
     DARE_HANDLER,
+    FUCK_HANDLER,
+    SEX_HANDLER
 ]
