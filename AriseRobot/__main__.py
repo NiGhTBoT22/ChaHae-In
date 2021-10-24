@@ -284,11 +284,11 @@ def start(update: Update, context: CallbackContext):
             reply_markup=InlineKeyboardMarkup(
                 [
                   [
-                  InlineKeyboardButton(text="Tʜᴇ Sᴏʟᴏ Gᴜɪʟᴅ", url="https://t.me/Thesologuild")
+                  InlineKeyboardButton(text="Help", callback_data="help_back")
                   ],
                   [
-                  InlineKeyboardButton(text="Aɴɪᴍᴇ Cʜᴀᴛ", url="t.me/animefunchat"),
-                  InlineKeyboardButton(text="AɪɴCʀᴀᴅ Nᴇᴛᴡᴏʀᴋ", url="t.me/aincradnetwork")
+                  InlineKeyboardButton(text="Support Group", url="https://t.me/HINATA_ROBOT_SUPPORT"),
+                  InlineKeyboardButton(text="Anime Group", url="https://t.me/shhhilence")
                   ]
                 ]
             ),
