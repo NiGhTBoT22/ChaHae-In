@@ -153,7 +153,7 @@ buttons = [
 
 OP_STRINGS = """ How I could ever tell him...I want you by my side until I draw my last breath? """
 
-CHA_VID = "https://telegra.ph/file/1ecaa74c1556fa3ad0dde.mp4"
+CHA_VID = "https://telegra.ph/file/64cb84764c1f6dcc9a272.jpg"
 KEK= "https://i.imgur.com/3l2Cptl.mp4"
 
 HELP_STRINGS = f"""
