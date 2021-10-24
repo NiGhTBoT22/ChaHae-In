@@ -144,7 +144,7 @@ buttons = [
 
           text="❕HELP❕", url="t.me/ShouyouROBOT?start=ghelp_{}".format(
 
- module
+ 
 
                                 ),
 
@@ -290,7 +290,7 @@ def start(update: Update, context: CallbackContext):
                   [
                   InlineKeyboardButton(text="Help", url="t.me/ShouyouROBOT?start=ghelp_{}".format(
 
-                                    module
+                                    
 
                                 ),)
                   ],
