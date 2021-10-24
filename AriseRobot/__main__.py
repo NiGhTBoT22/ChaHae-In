@@ -142,9 +142,9 @@ buttons = [
 
         InlineKeyboardButton(
 
-          text="❕HELP❕", url="t.me/{}?start=ghelp_{}".format(
+          text="❕HELP❕", url="t.me/ShouyouROBOT?start=ghelp_{}".format(
 
-context.bot.username, module
+ module
 
                                 ),
 
@@ -288,9 +288,9 @@ def start(update: Update, context: CallbackContext):
             reply_markup=InlineKeyboardMarkup(
                 [
                   [
-                  InlineKeyboardButton(text="Help", url="t.me/{}?start=ghelp_{}".format(
+                  InlineKeyboardButton(text="Help", url="t.me/ShouyouROBOT?start=ghelp_{}".format(
 
-                                    context.bot.username, module
+                                    module
 
                                 ),)
                   ],
