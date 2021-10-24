@@ -142,8 +142,8 @@ buttons = [
 
         InlineKeyboardButton(
 
-          text="❕HELP❕", 
-url="t.me/ShouyouROBOT?start=help"
+          text="❕HELP❕", callback_data="help_back") 
+
  
 
                                 
