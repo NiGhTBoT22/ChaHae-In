@@ -156,15 +156,11 @@ OP_STRINGS = """ How I could ever tell him...I want you by my side until I draw 
 CHA_VID = "https://telegra.ph/file/1ecaa74c1556fa3ad0dde.mp4"
 KEK= "https://i.imgur.com/3l2Cptl.mp4"
 
-HELP_STRINGS = """
-`Hey Sweetheart... I am` Cʜᴀ Hᴀᴇ-Iɴ[ㅤ](https://images.alphacoders.com/105/1054066.jpg) 
-⤚━━━━━━━━━━━━━━━━━━━━━━━━━⤙
-*Main* commands available:
- ❖ /start: Cʜᴇᴄᴋ Mᴇ... Iꜰ I Aᴍ Aʟɪᴠᴇ Oʀ Nᴏᴛ
- ❖ /help: Usᴇ Tʜɪs... Iꜰ Yᴏᴜ Nᴇᴇᴅ Mᴏʀᴇ Iɴꜰᴏ Aʙᴏᴜᴛ Mᴇ!
- ⤚━━━━━━━━━━━━━━━━━━━━━━━━⤙
- *For Issues Report At* @TheSoloGuild\n `Powered by` #AɪɴCʀᴀᴅ
- ⤚━━━━━━━━━━━━━━━━━━━━━━━━⤙"""
+HELP_STRINGS = f"""
+
+`Hey there! My name is` `Hinata Shôyô`({EMILIA_HELP_IMG}) 
+
+I have Quite a Few Features, Go Ahead and Check out!"""
 
 
 ARISE_IMG = "https://i.imgur.com/vQ4ryec.png"
