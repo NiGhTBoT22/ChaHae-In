@@ -82,13 +82,13 @@ def get_readable_time(seconds: int) -> str:
 SUP_VID = "https://telegra.ph/file/64cb84764c1f6dcc9a272.jpg"
 START_VID = "https://telegra.ph/file/c9f10581223f6c45d755e.jpg"
 PM_START_TEXT = """
-*This is Hinata Shôyô*
+`*This is Hinata Shôyô*
 
 A Diverse Systematic Bot Written in Python.
 
 You can Add Me In Your Group for Knowing my True Power.
 
-You can either use /help or the Commands Button Given Below To get a list of my features!
+You can either use /help or the Commands Button Given Below To get a list of my features!`
 
 
 [ㅤ](https://telegra.ph/file/7eaa21cf7b81549ba29ad.jpg)
