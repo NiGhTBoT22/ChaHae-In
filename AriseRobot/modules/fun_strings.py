@@ -795,3 +795,13 @@ INSULT_STRINGS = [
     "Hit Uranium with a slow moving neutron in your presence. It will be a worthwhile experience.",
     "You can be the first person to step on sun. Have a try.",
 ]
+
+
+HORNY_STRINGS = [
+    "How dare you to get on my girlfriend.",
+    "I have brought 1 litre of sperm. Wanna drink?",
+    "I am gonna launch my thing into yours.",
+    "I am gonna take your thing inside me.",
+    "I am gonna take every ounce of yours.",
+    "Get ready gonna do hard.",
+]
