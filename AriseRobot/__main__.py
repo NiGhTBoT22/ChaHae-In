@@ -276,7 +276,7 @@ def start(update: Update, context: CallbackContext):
     else:
         first_name = update.effective_user.first_name
         update.effective_message.reply_video(
-            CHA_VID, caption= "UwU Cʜᴀ Hᴀᴇ-Iɴ Summoned by {}(차해인)!\nProtecting Groups<b> since:</b> <code>{}</code>".format(
+            CHA_VID, caption= "<code>Hinata Shôyô is Here For You❤\nI am Awake Since</code>: <code>{}</code>".format(
                  escape_markdown(first_name), escape_markdown(uptime)
             ),
             parse_mode=ParseMode.MARKDOWN,
