@@ -102,7 +102,7 @@ buttons = [
 
         InlineKeyboardButton(
 
-            text="🔰Summon ME🔰",url=f"t.me/{BOT_USERNAME}?startgroup=true"
+            text="🔰Summon ME🔰",url=f"t.me/ShouyouROBOT?startgroup=true"
 
         ),
 
