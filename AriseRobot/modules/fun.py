@@ -31,6 +31,18 @@ def insult(update: Update, _):
     reply_text(random.choice(fun_strings.INSULT_STRINGS))
 
 @run_async
+def fuck(update: Update, _):
+    msg = update.effective_message
+    reply_text = msg.reply_to_message.reply_text if msg.reply_to_message else msg.reply_text
+    reply_text(random.choice(fun_strings.HORNY_STRINGS))
+
+@run_async
+def sex(update: Update, _):
+    msg = update.effective_message
+    reply_text = msg.reply_to_message.reply_text if msg.reply_to_message else msg.reply_text
+    reply_text(random.choice(fun_strings.HORNY_STRINGS))
+
+@run_async
 def dare(update: Update, context: CallbackContext):
     update.effective_message.reply_text(random.choice(fun_strings.DARE_STRINGS))
 
@@ -308,6 +320,8 @@ RUNS_HANDLER = DisableAbleCommandHandler("runs", runs)
 TRUTH_HANDLER = DisableAbleCommandHandler("truth", truth)
 DARE_HANDLER = DisableAbleCommandHandler("dare", dare)
 INSULT_HANDLER = DisableAbleCommandHandler("insult", insult)
+INSULT_HANDLER = DisableAbleCommandHandler("fuck", fuck)
+INSULT_HANDLER = DisableAbleCommandHandler("sex", sex)
 PAT_HANDLER = DisableAbleCommandHandler("pat", pat)
 ROLL_HANDLER = DisableAbleCommandHandler("roll", roll)
 TOSS_HANDLER = DisableAbleCommandHandler("toss", toss)
@@ -354,7 +368,9 @@ __command_list__ = [
     "8ball",
     "dare", 
     "truth", 
-    "insult"
+    "insult",
+    "fuck",
+    "sex"
 ]
 __handlers__ = [
     RUNS_HANDLER,
