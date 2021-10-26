@@ -295,14 +295,12 @@ def info(update: Update, context: CallbackContext):
     if user.id == OWNER_ID:
         text += f"\n\n disaster level of{html.escape(user.first_name)} is an '❖Owner❖'. "
         disaster_level_present = True
-    elif user.id == SUNG_ID:
-        text += f"\n\n disaster level of{html.escape(user.first_name)} is the ✧Sudo User. \n "
-        disaster_level_present = False    
+    
     elif user.id in DEV_USERS:
         text += "\n\nThis user is member one of the '❖ 𝐏𝐮𝐛𝐥𝐢𝐜 𝐒𝐚𝐟𝐞𝐭𝐲 𝐃𝐞𝐯𝐢𝐥 𝐇𝐮𝐧𝐭𝐞𝐫𝐬 ❖'."
         disaster_level_present = True
     elif user.id in DRAGONS:
-        text += "\n\nThis High Class Devil is a '✧ Lucifer ✧' 𝓣𝓱𝓮 𝓜𝓸𝓻𝓷𝓲𝓷𝓰 𝓢𝓽𝓪𝓻. \n The bringer of light, representing pride and enlightenment, the element of air, the direction of the east, and candles during ritual."
+        text += "\n\ndisaster level of is a Sudo User'✧ HIGH PEPS ✧' 𝓣𝓱𝓮 𝓜𝓸𝓻𝓷𝓲𝓷𝓰 𝓢𝓽𝓪𝓻. \n The bringer of light, representing pride and enlightenment, the element of air, the direction of the east, and cand."
         disaster_level_present = True
     elif user.id in DEMONS:
         text += "\n\nThis person is the Demonic 'Satan' 𝕷𝖔𝖗𝖉 𝖔𝖋 𝖙𝖍𝖊 𝕴𝖓𝖋𝖊𝖗𝖓𝖔. \n The adversary, representing opposition, the element of fire, the direction of the south, and the Sigil of Baphomet during ritual."
