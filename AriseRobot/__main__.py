@@ -79,7 +79,7 @@ def get_readable_time(seconds: int) -> str:
     ping_time += ":".join(time_list)
 
     return ping_time
-SUP_VID = "https://telegra.ph/file/64cb84764c1f6dcc9a272.jpg"
+SUP_IMG = "https://telegra.ph/file/64cb84764c1f6dcc9a272.jpg"
 START_VID = "https://telegra.ph/file/c9f10581223f6c45d755e.jpg"
 PM_START_TEXT = """
 `*This is Hinata Shôyô*
