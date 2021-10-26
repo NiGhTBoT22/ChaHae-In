@@ -777,7 +777,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.send_video(f"@{SUPPORT_CHAT}", SUP_VID, caption=f"UwU, I am here to protect you..")
+            dispatcher.bot.send_video(f"@{SUPPORT_CHAT}", SUP_IMG, caption=f"UwU, I am here to protect you..")
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!"
