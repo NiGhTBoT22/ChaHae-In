@@ -293,10 +293,10 @@ def info(update: Update, context: CallbackContext):
     disaster_level_present = False
 
     if user.id == OWNER_ID:
-        text += f"disaster level of\n\n {html.escape(user.first_name)} is an '❖Owner❖'. "
+        text += f"\n\n disaster level of{html.escape(user.first_name)} is an '❖Owner❖'. "
         disaster_level_present = True
     elif user.id == SUNG_ID:
-        text += f"\n\n {html.escape(user.first_name)} is the ✧Sudo User. \n "
+        text += f"\n\n disaster level of{html.escape(user.first_name)} is the ✧Sudo User. \n "
         disaster_level_present = False    
     elif user.id in DEV_USERS:
         text += "\n\nThis user is member one of the '❖ 𝐏𝐮𝐛𝐥𝐢𝐜 𝐒𝐚𝐟𝐞𝐭𝐲 𝐃𝐞𝐯𝐢𝐥 𝐇𝐮𝐧𝐭𝐞𝐫𝐬 ❖'."
