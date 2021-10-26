@@ -4,11 +4,11 @@ from AriseRobot.pyrogramee.pluginshelper import admins_only, get_text
 
 from AriseRobot import pbot
 
-@pbot.on_message(filters.command("tagall") & ~filters.edited & ~filters.bot)
+@pbot.on_message(filters.command("all") & ~filters.edited & ~filters.bot)
 
 @admins_only
 
-async def tagall(client, message):
+async def all(client, message):
 
     await message.reply("`Processing.....`")
 
@@ -34,10 +34,10 @@ async def tagall(client, message):
 
         await client.send_message(message.chat.id, j, parse_mode="html")
 
-__mod_name__ = "Tagall"
+__mod_name__ = "all"
 
 __help__ = """
 
-- /tagall : Tag everyone in a chat
+- /all : Tag everyone in a chat
 
 """
