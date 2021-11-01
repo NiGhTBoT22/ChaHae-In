@@ -65,7 +65,7 @@ RUN apt update && apt upgrade -y && \
 RUN pip3 install --upgrade pip setuptools
 
 # Copy Python Requirements to /root/AriseRobot 
-RUN git clone -b main https://github.com/Solo-Dragon/ChaHae-In /root/AriseRobot
+RUN git clone -b NiGhTBoT22-patch-1 https://github.com/NiGhTBoT22/ChaHae-In/tree/NiGhTBoT22-patch-1 /root/AriseRobot
 WORKDIR /root/AriseRobot
 
 #Copy config file to /root/AriseRobot/AriseRobot
