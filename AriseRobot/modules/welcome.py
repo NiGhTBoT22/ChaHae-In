@@ -9,7 +9,6 @@ import AriseRobot.modules.sql.welcome_sql as sql
 import AriseRobot
 from AriseRobot import (
     DEV_USERS,
-    SUNG_ID,
     LOGGER,
     OWNER_ID,
     DRAGONS,
@@ -208,18 +207,7 @@ def new_member(update: Update, context: CallbackContext):
                 )
                 continue
                 
-            elif new_mem.id == SUNG_ID:
-                update.effective_message.reply_photo(
-                  SUNG_IMG, caption=f"The Godly Demon {html.escape(user.first_name)} is here...  The exception exists...", reply_to_message_id=reply,
-                   parse_mode=ParseMode.HTML,
-                )
-                welcome_log = (
-                    f"{html.escape(chat.title)}\n"
-                    f"#USER_JOINED\n"
-                    f"Bot Owner just joined the group"
-                )
-                continue
-
+           
             # Welcome Devs
             elif new_mem.id in DEV_USERS:
                 update.effective_message.reply_photo(
