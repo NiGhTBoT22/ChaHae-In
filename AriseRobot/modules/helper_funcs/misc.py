@@ -7,7 +7,6 @@ from telegram.error import TelegramError
 
 
 class EqInlineKeyboardButton(InlineKeyboardButton):
-
     def __eq__(self, other):
         return self.text == other.text
 
@@ -22,39 +21,33 @@ def split_message(msg: str) -> List[str]:
     if len(msg) < MAX_MESSAGE_LENGTH:
         return [msg]
 
+    lines = msg.splitlines(True)
+    small_msg = ""
+    result = []
+    for line in lines:
+        if len(small_msg) + len(line) < MAX_MESSAGE_LENGTH:
+            small_msg += line
+        else:
+            result.append(small_msg)
+            small_msg = line
     else:
-        lines = msg.splitlines(True)
-        small_msg = ""
-        result = []
-        for line in lines:
-            if len(small_msg) + len(line) < MAX_MESSAGE_LENGTH:
-                small_msg += line
-            else:
-                result.append(small_msg)
-                small_msg = line
         # Else statement at the end of the for loop, so append the leftover string.
         result.append(small_msg)
 
-        return result
+    return result
 
 
 def paginate_modules(page_n: int, module_dict: Dict, prefix, chat=None) -> List:
     if not chat:
-        modules = sorted([
-            EqInlineKeyboardButton(
-                x.__mod_name__,
-                callback_data="{}_module({})".format(prefix,
-                                                     x.__mod_name__.lower()))
-            for x in module_dict.values()
-        ])
+        modules = sorted(
+            [EqInlineKeyboardButton(x.__mod_name__,
+                                    callback_data="{}_module({})".format(prefix, x.__mod_name__.lower())) for x
+             in module_dict.values()])
     else:
-        modules = sorted([
-            EqInlineKeyboardButton(
-                x.__mod_name__,
-                callback_data="{}_module({},{})".format(prefix, chat,
-                                                        x.__mod_name__.lower()))
-            for x in module_dict.values()
-        ])
+        modules = sorted(
+            [EqInlineKeyboardButton(x.__mod_name__,
+                                    callback_data="{}_module({},{})".format(prefix, chat, x.__mod_name__.lower())) for x
+             in module_dict.values()])
 
     pairs = [
     modules[i * 3:(i + 1) * 3] for i in range((len(modules) + 3 - 1) // 3)
@@ -73,27 +66,25 @@ def paginate_modules(page_n: int, module_dict: Dict, prefix, chat=None) -> List:
     # can only have a certain amount of buttons side by side
     if len(pairs) > 8:
         pairs = pairs[modulo_page * 8:8 * (modulo_page + 1)] + [
-            (EqInlineKeyboardButton("⫷", callback_data="{}_prev({})".format(prefix, modulo_page)),
-             EqInlineKeyboardButton("⫸", callback_data="{}_next({})".format(prefix, modulo_page)))]
+            (EqInlineKeyboardButton("<", callback_data="{}_prev({})".format(prefix, modulo_page)),
+             EqInlineKeyboardButton("Back", url="https://t.me/NicoRobin_robot?start="),
+             EqInlineKeyboardButton(">", callback_data="{}_next({})".format(prefix, modulo_page)))]
 
     else:
-        pairs += [[EqInlineKeyboardButton("Back", callback_data="emilia_back")]]
+        pairs += [[EqInlineKeyboardButton("Back", callback_data="saitama_back")]]
 
     return pairs
 
 
-def send_to_list(bot: Bot,
-                 send_to: list,
-                 message: str,
-                 markdown=False,
-                 html=False) -> None:
+def send_to_list(
+    bot: Bot, send_to: list, message: str, markdown=False, html=False
+) -> None:
     if html and markdown:
         raise Exception("Can only send with either markdown or HTML!")
     for user_id in set(send_to):
         try:
             if markdown:
-                bot.send_message(
-                    user_id, message, parse_mode=ParseMode.MARKDOWN)
+                bot.send_message(user_id, message, parse_mode=ParseMode.MARKDOWN)
             elif html:
                 bot.send_message(user_id, message, parse_mode=ParseMode.HTML)
             else:
