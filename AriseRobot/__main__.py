@@ -88,7 +88,7 @@ A Diverse Systematic Bot Written in Python.
 
 You can Add Me In Your Group for Knowing my True Power.
 
-You can either use /help or the Commands Button Given Below To get a list of my features!`
+You can either use `/help` or the Commands Button Given Below To get a list of my features!`
 
 
 [ㅤ](https://telegra.ph/file/7eaa21cf7b81549ba29ad.jpg)
