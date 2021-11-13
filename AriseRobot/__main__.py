@@ -446,7 +446,7 @@ def Arise_about_callback(update, context):
     query = update.callback_query
     if query.data == "Arise_":
         query.message.edit_text(
-             text="""I'm *Mᴀᴋɪᴍᴀ Sᴀɴsᴜᴋɪ*, a powerful group management bot built to help you manage your group easily.
+             text="""I'm *Hinata Shôyô*, a powerful group management bot built to help you manage your group easily.
                  \n❍ I can restrict users.
                  \n❍ I can greet users with customizable welcome messages and even set a group's rules.
                  \n❍ I have an advanced anti-flood system.
@@ -481,7 +481,7 @@ def Source_about_callback(update, context):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" Hi..🤗 I'm *Makima*
+            text=""" Hi..🤗 I'm *Shôyô*
                   \n [WORK IN PROGRESS](https://T.ME/animefunchat) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
