@@ -565,6 +565,23 @@ PUNCH = (
 
 HUG = ("hugs", "hugged", "kissed", "pinches")
 
+HBD = ("slams cake on", "takes party from", "gives birthday bomb", "wishes", "wishes Happy Birthday", "sings happy birthday for")
+
+HBD_TEMPLATES = (
+    "{user1} {hbd} {user2}.",
+    "{user1} {hbd} {user2} warmly.",
+    "{user1} {hbd} {user2} \n Count your life by smiles, not tears. Count your age by friends, not years. Happy birthday! ",
+    "{user1} {hbd} {user2} with kindness.",
+    "{user1} {hbd} {user2} with fun",
+    "{user1} {hbd} {user2} without any reason",
+    "{user1} says Happy birthday! I hope all your birthday wishes and dreams come true. {user2}",
+    "{user1} Another adventure filled year awaits {user2}. Welcome it by celebrating your birthday with pomp and splendor. Wishing you a very happy and fun-filled birthday!",
+    "May the joy that you have spread in the past come back to {user2} on this day. Wishing you a very happy birthday!",
+    "Happy birthday! {user2}'s life is just about to pick up speed and blast off into the stratosphere. Wear a seat belt and be sure to enjoy the journey. Happy birthday",
+    "{user2} Your birthday is the first day of another 365-day journey. Be the shining thread in the beautiful tapestry of the world to make this year the best ever. Enjoy the ride.",
+)
+
+
 # Table strings credits: @SaitamaRobot
 
 TABLE = (
