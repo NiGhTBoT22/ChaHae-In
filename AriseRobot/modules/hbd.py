@@ -25,7 +25,7 @@ def goodnight(update, context):
     message.reply_text(reply, parse_mode=ParseMode.MARKDOWN)
 
 @run_async
-def hbd(update, context):
+def hbdk(update, context):
     message = update.effective_message
     first_name = update.effective_user.first_name
     reply = random.choice(fun.HBD)
@@ -69,17 +69,17 @@ def hbd(update, context):
         )
         user2 = curr_user
 
-    temp = random.choice(fun.HBD_TEMPLATES)
+    wtf = random.choice(fun.HBD_TEMPLATES)
     hbd = random.choice(fun.HBD)
 
-    repl = temp.format(user1=user1, user2=user2, hbd=hbd)
+    repl = wtf.format(user1=user1, user2=user2, hbd=hbd)
 
     reply_text(repl, parse_mode=ParseMode.MARKDOWN)
     
     
     
     
-    HBD_HANDLER = DisableAbleCommandHandler("birthday", hbd)
+    HBD_HANDLER = DisableAbleCommandHandler(["birthday", "bday", "hbd"], hbd)
     
     
     dispatcher.add_handler(HBD_HANDLER)
