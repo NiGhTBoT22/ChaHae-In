@@ -117,7 +117,7 @@ def hpmanager(user):
 
 def make_bar(per):
     done = min(round(per / 10), 10)
-    return "◆" * done + "◇" * (10 - done)
+    return "■" * done + "□" * (10 - done)
 
 
 @run_async
@@ -246,20 +246,20 @@ def info(update: Update, context: CallbackContext):
 
     text = (
         f"╒═══❖<b> The Satanic Bible:</b>❖\n"
-        f"ID: <code>{user.id}</code>\n"
-        f"⧰First Name: {html.escape(user.first_name)}"
+        f"┣|• ID: <code>{user.id}</code>\n"
+        f"┣|• First Name: {html.escape(user.first_name)}"
     )
 
     if user.last_name:
-        text += f"\n⧰Last Name: {html.escape(user.last_name)}"
+        text += f"\n┣|• Last Name: {html.escape(user.last_name)}"
 
     if user.username:
-        text += f"\n⧰Username: @{html.escape(user.username)}"
+        text += f"\n┣|• Username: @{html.escape(user.username)}"
 
-    text += f"\n⧰Permalink: {mention_html(user.id, 'link')}"
+    text += f"\n┣|• Permalink: {mention_html(user.id, 'link')}"
 
     if chat.type != "private" and user_id != bot.id:
-        _stext = "\nPresence: <code>{}</code>"
+        _stext = "\n┣|• Presence: <code>{}</code>"
 
         afk_st = is_afk(user.id)
         if afk_st:
@@ -293,16 +293,14 @@ def info(update: Update, context: CallbackContext):
     disaster_level_present = False
 
     if user.id == OWNER_ID:
-        text += f"\n\n {html.escape(user.first_name)} is an '❖Archangel❖'. \nAn archangel is an angel of high rank... The Guide and the Master of Makima the Control Devil"
+        text += f"\n\n disaster level of{html.escape(user.first_name)} is an '❖Owner❖'. "
         disaster_level_present = True
-    elif user.id == SUNG_ID:
-        text += f"\n\n {html.escape(user.first_name)} is the ✧GodLy Demon. \n An omnipotent being of the highest hierarchy in gods and demons powerful enough to overthrow the highest gods and the demons."
-        disaster_level_present = False    
+    
     elif user.id in DEV_USERS:
         text += "\n\nThis user is member one of the '❖ 𝐏𝐮𝐛𝐥𝐢𝐜 𝐒𝐚𝐟𝐞𝐭𝐲 𝐃𝐞𝐯𝐢𝐥 𝐇𝐮𝐧𝐭𝐞𝐫𝐬 ❖'."
         disaster_level_present = True
     elif user.id in DRAGONS:
-        text += "\n\nThis High Class Devil is a '✧ Lucifer ✧' 𝓣𝓱𝓮 𝓜𝓸𝓻𝓷𝓲𝓷𝓰 𝓢𝓽𝓪𝓻. \n The bringer of light, representing pride and enlightenment, the element of air, the direction of the east, and candles during ritual."
+        text += "\n\ndisaster level of is a Sudo User'✧ HIGH PEPS ✧' 𝓣𝓱𝓮 𝓜𝓸𝓻𝓷𝓲𝓷𝓰 𝓢𝓽𝓪𝓻. \n The bringer of light, representing pride and enlightenment, the element of air, the direction of the east, and cand."
         disaster_level_present = True
     elif user.id in DEMONS:
         text += "\n\nThis person is the Demonic 'Satan' 𝕷𝖔𝖗𝖉 𝖔𝖋 𝖙𝖍𝖊 𝕴𝖓𝖋𝖊𝖗𝖓𝖔. \n The adversary, representing opposition, the element of fire, the direction of the south, and the Sigil of Baphomet during ritual."

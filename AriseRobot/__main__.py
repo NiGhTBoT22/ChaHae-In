@@ -79,60 +79,92 @@ def get_readable_time(seconds: int) -> str:
     ping_time += ":".join(time_list)
 
     return ping_time
-SUP_VID = "https://telegra.ph/file/f26b221897fe1e3403063.mp4"
-START_VID = "https://i.imgur.com/B2FzRvj.mp4"
+SUP_IMG = "https://telegra.ph/file/64cb84764c1f6dcc9a272.jpg"
+START_VID = "https://telegra.ph/file/c9f10581223f6c45d755e.jpg"
 PM_START_TEXT = """
-*Cʜᴀ Hᴀᴇ-Iɴ (차해인) ɪs ᴀ Kᴏʀᴇᴀɴ S-Rᴀɴᴋ Hᴜɴᴛᴇʀ 
-ᴀɴᴅ ᴛʜᴇ Vɪᴄᴇ-Gᴜɪʟᴅ Mᴀsᴛᴇʀ ᴏғ ᴛʜᴇ Hᴜɴᴛᴇʀs Gᴜɪʟᴅ.*
-⥈❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖⥈
-❝𝐀 𝐌𝐚𝐧𝐡𝐰𝐚 𝐁𝐚𝐬𝐞𝐝 𝐂𝐮𝐭𝐞 𝐚𝐧𝐝 𝐀𝐝𝐯𝐚𝐧𝐜𝐞𝐝 𝐆𝐫𝐨𝐮𝐩 𝐌𝐚𝐧𝐚𝐠𝐞𝐦𝐞𝐧𝐭 𝐁𝐨𝐭 𝙛𝙧𝙤𝙢
-➲ *SФLФ LΞVΞLIИG*
-𝐛𝐲 𝐖𝐞𝐞𝐛𝐬...❞
-⥈❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖⥈
-⤚━━━━━━━━━━━━━━━━━━━━━━━━⤙
-𝚄𝚜𝚎 𝚝𝚑𝚎 𝚋𝚞𝚝𝚝𝚘𝚗𝚜 𝚋𝚎𝚕𝚘𝚠 𝚝𝚘 𝚔𝚗𝚘𝚠 𝚖𝚘𝚛𝚎 𝚊𝚋𝚘𝚞𝚝 𝚖𝚎 *𝙾𝚛*\n 𝚈𝚘𝚞 𝚌𝚊𝚗 𝚞𝚜𝚎 /help 𝚝𝚘 𝚐𝚘 𝚝𝚑𝚛𝚘𝚞𝚐𝚑 𝚃𝚑𝚎 𝙷𝚞𝚗𝚝𝚎𝚛𝚜 𝙶𝚞𝚒𝚍𝚎
-Powered by #AɪɴCʀᴀᴅ
-⤚━━━━━━━━━━━━━━━━━━━━━━━━⤙
-[ㅤ](https://telegra.ph/file/8712abbb7ac7fec3391ca.png)
+`*This is Hinata Shôyô*
+
+A Diverse Systematic Bot Written in Python.
+
+You can Add Me In Your Group for Knowing my True Power.
+
+You can either use `/help` or the Commands Button Given Below To get a list of my features!`
+
+
+[ㅤ](https://telegra.ph/file/7eaa21cf7b81549ba29ad.jpg)
 """
 
 buttons = [
+
     [
+
         InlineKeyboardButton(
-            text="Aᴅᴅ Cʜᴀ Hᴀᴇ-Iɴ ᴛᴏ Pʀᴏᴛᴇᴄᴛ Yᴏᴜʀ Gʀᴏᴜᴘ ➕️", url="t.me/chahaeinbot?startgroup=true"),
-    ],
-    [
-        InlineKeyboardButton(text="Mʏ ʀᴀɴᴋ", callback_data="Arise_"),
-        InlineKeyboardButton(
-            text="Tʜᴇ Sᴏʟᴏ Gᴜɪʟᴅ", url=f"https://t.me/{SUPPORT_CHAT}"
+
+            text="🔰Summon ME🔰",url=f"t.me/ShouyouROBOT?startgroup=true"
+
         ),
+
     ],
+
     [
-        InlineKeyboardButton(text="Tʜᴇ Hᴜɴᴛᴇʀs Gᴜɪᴅᴇ", callback_data="help_back"),
-    ],
-    [
-        InlineKeyboardButton(text="✧ Aɴɪᴍᴇ Cʜᴀᴛ ✧", url="t.me/animefunchat"),
+
         InlineKeyboardButton(
-            text="❖ AɪɴCʀᴀᴅ Nᴇᴛᴡᴏʀᴋ ❖", url=f"https://t.me/aincradnetwork"
-        ),
-    ]
+
+          text="📮 Updates", url="https://t.me/CLIPPED_CROW"
+
+        ),InlineKeyboardButton(
+
+           text="🐱 Support", url=f"https://t.me/{SUPPORT_CHAT}"
+
+         ),
+
+    ],
+
+    [
+
+        InlineKeyboardButton(
+
+          text="WALLPAPER", url="https://t.me/ani_pix"
+
+        ),InlineKeyboardButton(
+
+           text="GROUP", url=f"https://t.me/shhhilence"
+
+         ),
+
+    ],
+
+         
+
+    
+
+  [
+
+        InlineKeyboardButton(
+
+          text="❕HELP❕", callback_data="help_back") , 
+
+ 
+
+                                
+
+        
+
+    ],
+
 ]
 
 
 OP_STRINGS = """ How I could ever tell him...I want you by my side until I draw my last breath? """
 
-CHA_VID = "https://telegra.ph/file/1ecaa74c1556fa3ad0dde.mp4"
+CHA_VID = "https://telegra.ph/file/cfa29ed1ab34284a873e8.mp4"
 KEK= "https://i.imgur.com/3l2Cptl.mp4"
 
-HELP_STRINGS = """
-`Hey Sweetheart... I am` Cʜᴀ Hᴀᴇ-Iɴ[ㅤ](https://images.alphacoders.com/105/1054066.jpg) 
-⤚━━━━━━━━━━━━━━━━━━━━━━━━━⤙
-*Main* commands available:
- ❖ /start: Cʜᴇᴄᴋ Mᴇ... Iꜰ I Aᴍ Aʟɪᴠᴇ Oʀ Nᴏᴛ
- ❖ /help: Usᴇ Tʜɪs... Iꜰ Yᴏᴜ Nᴇᴇᴅ Mᴏʀᴇ Iɴꜰᴏ Aʙᴏᴜᴛ Mᴇ!
- ⤚━━━━━━━━━━━━━━━━━━━━━━━━⤙
- *For Issues Report At* @TheSoloGuild\n `Powered by` #AɪɴCʀᴀᴅ
- ⤚━━━━━━━━━━━━━━━━━━━━━━━━⤙"""
+HELP_STRINGS = f"""
+
+`Hey there! My name is` `Hinata Shôyô`
+
+I have Quite a Few Features, Go Ahead and Check out!"""
 
 
 ARISE_IMG = "https://i.imgur.com/vQ4ryec.png"
@@ -248,19 +280,23 @@ def start(update: Update, context: CallbackContext):
     else:
         first_name = update.effective_user.first_name
         update.effective_message.reply_video(
-            CHA_VID, caption= "UwU Cʜᴀ Hᴀᴇ-Iɴ Summoned by {}(차해인)!\nProtecting Groups<b> since:</b> <code>{}</code>".format(
-                 escape_markdown(first_name), escape_markdown(uptime)
+            CHA_VID, caption= "Hinata Shôyô is Here For You❤\nI am Awake Since: {}".format(
+                  escape_markdown(uptime)
             ),
             parse_mode=ParseMode.MARKDOWN,
             #parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
                 [
                   [
-                  InlineKeyboardButton(text="Tʜᴇ Sᴏʟᴏ Gᴜɪʟᴅ", url="https://t.me/Thesologuild")
+                  InlineKeyboardButton(text="Help", url="t.me/ShouyouROBOT?start=help"
+
+                                    
+
+                                )
                   ],
                   [
-                  InlineKeyboardButton(text="Aɴɪᴍᴇ Cʜᴀᴛ", url="t.me/animefunchat"),
-                  InlineKeyboardButton(text="AɪɴCʀᴀᴅ Nᴇᴛᴡᴏʀᴋ", url="t.me/aincradnetwork")
+                  InlineKeyboardButton(text="Support Group", url="https://t.me/HINATA_ROBOT_SUPPORT"),
+                  InlineKeyboardButton(text="Anime Group", url="https://t.me/shhhilence")
                   ]
                 ]
             ),
@@ -410,7 +446,7 @@ def Arise_about_callback(update, context):
     query = update.callback_query
     if query.data == "Arise_":
         query.message.edit_text(
-             text="""I'm *Mᴀᴋɪᴍᴀ Sᴀɴsᴜᴋɪ*, a powerful group management bot built to help you manage your group easily.
+             text="""I'm *Hinata Shôyô*, a powerful group management bot built to help you manage your group easily.
                  \n❍ I can restrict users.
                  \n❍ I can greet users with customizable welcome messages and even set a group's rules.
                  \n❍ I have an advanced anti-flood system.
@@ -445,7 +481,7 @@ def Source_about_callback(update, context):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" Hi..🤗 I'm *Makima*
+            text=""" Hi..🤗 I'm *Shôyô*
                   \n [WORK IN PROGRESS](https://T.ME/animefunchat) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
@@ -741,7 +777,11 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.send_video(f"@{SUPPORT_CHAT}", SUP_VID, caption=f"UwU, I am here to protect you..")
+            dispatcher.bot.sendMessage(
+                f"@{SUPPORT_CHAT}",
+                "[Yes I'm alive now!](https://telegra.ph/file/29bdf8346953cdde73ee3.jpg)",
+                parse_mode=ParseMode.MARKDOWN,
+            )
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!"

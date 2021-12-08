@@ -14,9 +14,33 @@ from telegram.ext import CallbackContext, run_async
 GIF_ID = "CgACAgQAAx0CSVUvGgAC7KpfWxMrgGyQs-GUUJgt-TSO8cOIDgACaAgAAlZD0VHT3Zynpr5nGxsE"
 
 
+PHOTO = 'https://i.imgur.com/UjiCJhZ.jpg'
+
 @run_async
 def runs(update: Update, context: CallbackContext):
     update.effective_message.reply_text(random.choice(fun_strings.RUN_STRINGS))
+
+@run_async
+def truth(update: Update, context: CallbackContext):
+    update.effective_message.reply_text(random.choice(fun_strings.TRUTH_STRINGS))
+
+@run_async
+def insult(update: Update, _):
+    msg = update.effective_message
+    reply_text = msg.reply_to_message.reply_text if msg.reply_to_message else msg.reply_text
+    reply_text(random.choice(fun_strings.INSULT_STRINGS))
+
+@run_async
+def fuck(update: Update, context: CallbackContext):
+    update.effective_message.reply_text(random.choice(fun_strings.HORNY_STRINGS))
+
+@run_async
+def sex(update: Update, context: CallbackContext):
+    update.effective_message.reply_text(random.choice(fun_strings.HORNY_STRINGS))
+
+@run_async
+def dare(update: Update, context: CallbackContext):
+    update.effective_message.reply_text(random.choice(fun_strings.DARE_STRINGS))
 
 
 @run_async
@@ -266,24 +290,34 @@ def weebify(update: Update, context: CallbackContext):
 
 
 __help__ = """
- ❍ /runs*:* reply a random string from an array of replies
- ❍ /slap*:* slap a user, or get slapped if not a reply
- ❍ /shrug*:* get shrug XD
- ❍ /table*:* get flip/unflip :v
- ❍ /decide*:* Randomly answers yes/no/maybe
- ❍ /toss*:* Tosses A coin
+ ❍ `/runs`*:* Reply a random string from an array of replies
+ ❍ `/slap`*:* Slap a user, or get slapped if not a reply 🌝
+ ❍ `/shrug`*:* Get shrug XD
+ ❍ `/table`*:* Get flip/unflip :v
+ ❍ `/rlg`*:* Join ears,nose,mouth and create an emo ;-;
+ ❍ `/shout <keyword>`*:* Write anything you want to give loud shout
+ ❍ `/weebify <text>`*:* Returns a weebified text
+ ❍ `/pat`*:* Pats a user, or get patted (^-^)
  ❍ /bluetext*:* check urself :V
- ❍ /roll*:* Roll a dice
- ❍ /rlg*:* Join ears,nose,mouth and create an emo ;-;
- ❍ /shout <keyword>*:* write anything you want to give loud shout
- ❍ /weebify <text>*:* returns a weebified text
  ❍ /sanitize*:* always use this before /pat or any contact
- ❍ /pat*:* pats a user, or get patted
+  - - - - - - - - - -
+❍ *Games* 🎲 *:*
+ ❍ `/truth`*:* Get ready to reveal a surprising truth🤫
+ ❍ `/dare`*:* A dare is on way 😈
+ ❍ `/insult`*:* Insult the person
+ ❍ `/decide`*:* Randomly answers yes/no/maybe/idk
+ ❍ `/toss`*:* Tosses A coin
+ ❍ `/roll`*:* Roll a dice & get you a number
  ❍ /8ball*:* predicts using 8ball method 
 """
 
 SANITIZE_HANDLER = DisableAbleCommandHandler("sanitize", sanitize)
 RUNS_HANDLER = DisableAbleCommandHandler("runs", runs)
+TRUTH_HANDLER = DisableAbleCommandHandler("truth", truth)
+DARE_HANDLER = DisableAbleCommandHandler("dare", dare)
+INSULT_HANDLER = DisableAbleCommandHandler("insult", insult)
+SEX_HANDLER = DisableAbleCommandHandler("fuck", fuck)
+FUCK_HANDLER = DisableAbleCommandHandler("sex", sex)
 PAT_HANDLER = DisableAbleCommandHandler("pat", pat)
 ROLL_HANDLER = DisableAbleCommandHandler("roll", roll)
 TOSS_HANDLER = DisableAbleCommandHandler("toss", toss)
@@ -297,6 +331,11 @@ SHOUT_HANDLER = DisableAbleCommandHandler("shout", shout)
 WEEBIFY_HANDLER = DisableAbleCommandHandler("weebify", weebify)
 
 dispatcher.add_handler(WEEBIFY_HANDLER)
+dispatcher.add_handler(INSULT_HANDLER)
+dispatcher.add_handler(TRUTH_HANDLER)
+dispatcher.add_handler(FUCK_HANDLER)
+dispatcher.add_handler(SEX_HANDLER)
+dispatcher.add_handler(DARE_HANDLER)
 dispatcher.add_handler(SHOUT_HANDLER)
 dispatcher.add_handler(SANITIZE_HANDLER)
 dispatcher.add_handler(RUNS_HANDLER)
@@ -325,6 +364,11 @@ __command_list__ = [
     "shout",
     "weebify",
     "8ball",
+    "dare", 
+    "truth", 
+    "insult",
+    "fuck",
+    "sex"
 ]
 __handlers__ = [
     RUNS_HANDLER,
@@ -340,4 +384,9 @@ __handlers__ = [
     SHOUT_HANDLER,
     WEEBIFY_HANDLER,
     EIGHTBALL_HANDLER,
+    INSULT_HANDLER,
+    TRUTH_HANDLER, 
+    DARE_HANDLER,
+    FUCK_HANDLER,
+    SEX_HANDLER
 ]

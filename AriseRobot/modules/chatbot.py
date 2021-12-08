@@ -355,7 +355,7 @@ async def inuka(client, message):
 
 __help__ = """
 <b> AI Chatbot </b>
-Cha Hae-In AI Chatot
+Shoyo AI Chatot
 
  - /chatbot [ON/OFF]: Enables and disables AI Chat mode 
  - /chatbot EN : Enables English only chatbot
